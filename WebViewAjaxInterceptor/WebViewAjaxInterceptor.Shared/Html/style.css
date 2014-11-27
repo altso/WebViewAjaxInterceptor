@@ -1,0 +1,14 @@
+﻿* {
+    font-family: monospace;
+    font-size: 10pt;
+}
+html {
+    background: black;
+    color: white;
+}
+.content {
+    margin: 100px 20px;
+}
+#log {
+    margin: 100px 0;
+}
