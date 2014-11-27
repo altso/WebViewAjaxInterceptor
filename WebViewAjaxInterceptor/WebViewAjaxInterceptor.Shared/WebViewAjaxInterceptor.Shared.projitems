@@ -21,6 +21,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Html\ajax\data.txt" />
     <Content Include="$(MSBuildThisFileDirectory)Html\index.html" />
     <Content Include="$(MSBuildThisFileDirectory)Html\style.css" />
   </ItemGroup>

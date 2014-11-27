@@ -12,6 +12,13 @@ namespace WebViewAjaxInterceptor
     {
         public IAsyncOperation<IInputStream> UriToStreamAsync(Uri uri)
         {
+            string path = uri.AbsolutePath;
+
+            if (path.StartsWith("/ajax", StringComparison.OrdinalIgnoreCase))
+            {
+                return GetContent(new Uri("any:///ajax/data.txt")).AsAsyncOperation();
+            }
+
             return GetContent(uri).AsAsyncOperation();
         }
 
@@ -27,7 +34,7 @@ namespace WebViewAjaxInterceptor
             }
             catch (Exception e)
             {
-                throw new FileNotFoundException("File not found in '/Assets/Technic_2.0'.", path, e);
+                throw new FileNotFoundException("File not found in '/Html'.", path, e);
             }
         }
     }
