@@ -6,13 +6,15 @@
     <title>A sample page that makes an ajax call</title>
     <link href="style.css" rel="stylesheet" />
 </head>
-    <body>
-        <div class="content">
-            <button id="action">Push the button</button>
-            <div id="log">
-                <span id="status"></span>
-            </div>
+<body>
+    <div class="content">
+        <button class="action" data-url="ajax/data">Send AJAX request to 'ajax/data' (will crash)</button><br />
+        <button class="action" data-url="ajax/data.js">Send AJAX request to 'ajax/data.js'</button><br />
+        <button class="action" data-url="ajax/data.anyextension">Send AJAX request to 'ajax/data.anyextension'</button><br />
+        <div id="log">
+            <span id="status"></span>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
