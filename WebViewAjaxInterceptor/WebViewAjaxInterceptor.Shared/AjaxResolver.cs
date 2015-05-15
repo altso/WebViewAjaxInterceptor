@@ -29,6 +29,8 @@ namespace WebViewAjaxInterceptor
             {
                 Uri localUri = new Uri("ms-appx:///Html" + path);
                 StorageFile f = await StorageFile.GetFileFromApplicationUriAsync(localUri);
+                // uncomment to fix the crash
+                //return await f.OpenReadAsync();
                 IRandomAccessStream stream = await f.OpenAsync(FileAccessMode.Read);
                 return stream.GetInputStreamAt(0);
             }
