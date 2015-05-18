@@ -30,9 +30,15 @@ for (i = 0, length = actions.length; i < length; i++) {
         xhr.onerror = function(e) {
             log('error');
         };
-        var url = this.getAttribute('data-url');
-        log('sending to ' + url);
-        xhr.open('GET', url, true);
-        xhr.send();
+        var url = this.getAttribute('data-url'),
+            method = this.getAttribute('data-method') || 'GET';
+        log('sending ' + method + ' ' + url);
+        try {
+            xhr.open(method, url, true);
+            xhr.send();
+
+        } catch (e) {
+            log(e);
+        }
     }
 }
