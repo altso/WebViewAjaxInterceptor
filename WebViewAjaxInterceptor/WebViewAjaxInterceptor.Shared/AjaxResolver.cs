@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Storage;
 using Windows.Storage.Streams;
+using Windows.UI.Popups;
 using Windows.Web;
 using Newtonsoft.Json;
 
@@ -44,8 +45,11 @@ namespace WebViewAjaxInterceptor
             }
         }
 
-        private Task<IInputStream> GetObject<T>(T item)
+        private async Task<IInputStream> GetObject<T>(T item)
         {
+            var messageDialog = new MessageDialog("Url succesfully passed");
+            await messageDialog.ShowAsync();
+            
             IRandomAccessStream inMemoryStream = new InMemoryRandomAccessStream();
             var stream = inMemoryStream.AsStream();
             inMemoryStream.Seek(0);
@@ -53,7 +57,7 @@ namespace WebViewAjaxInterceptor
             _jsonSerializer.Serialize(writer, item);
             writer.Flush();
             stream.Seek(0L, SeekOrigin.Begin);
-            return Task.FromResult<IInputStream>(new InputStreamWithContentType(inMemoryStream, "application/javascript"));
+            return await Task.FromResult<IInputStream>(new InputStreamWithContentType(inMemoryStream, "application/javascript"));
         }
 
         private class InputStreamWithContentType : IInputStream, IContentTypeProvider
