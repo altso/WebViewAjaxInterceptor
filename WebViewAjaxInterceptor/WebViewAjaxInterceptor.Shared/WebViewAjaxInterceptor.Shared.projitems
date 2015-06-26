@@ -16,6 +16,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)WebHost.xaml.cs">
       <DependentUpon>WebHost.xaml</DependentUpon>
     </Compile>
@@ -29,6 +32,10 @@
     <Content Include="$(MSBuildThisFileDirectory)Html\script.js" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)WebHost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

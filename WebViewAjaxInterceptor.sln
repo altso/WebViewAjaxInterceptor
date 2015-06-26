@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebViewAjaxInterceptor", "WebViewAjaxInterceptor", "{68AB91D3-E02C-4724-9351-134B2CBF3529}"
 EndProject
@@ -11,8 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewAjaxInterceptor.Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewAjaxInterceptor.WindowsPhone", "WebViewAjaxInterceptor\WebViewAjaxInterceptor.WindowsPhone\WebViewAjaxInterceptor.WindowsPhone.csproj", "{BEF6AA55-6B5B-4C24-A176-17D147F5FDC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewAjaxInterceptor.UWP", "WebViewAjaxInterceptor.UWP\WebViewAjaxInterceptor.UWP.csproj", "{96B492A7-45F9-4714-A754-44D135FC8244}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WebViewAjaxInterceptor\WebViewAjaxInterceptor.Shared\WebViewAjaxInterceptor.Shared.projitems*{96b492a7-45f9-4714-a754-44d135fc8244}*SharedItemsImports = 4
 		WebViewAjaxInterceptor\WebViewAjaxInterceptor.Shared\WebViewAjaxInterceptor.Shared.projitems*{bef6aa55-6b5b-4c24-a176-17d147f5fdc3}*SharedItemsImports = 4
 		WebViewAjaxInterceptor\WebViewAjaxInterceptor.Shared\WebViewAjaxInterceptor.Shared.projitems*{82617ad4-bf21-4606-b785-daeeffc3b22e}*SharedItemsImports = 4
 		WebViewAjaxInterceptor\WebViewAjaxInterceptor.Shared\WebViewAjaxInterceptor.Shared.projitems*{c09680eb-0351-42aa-a7f7-33569500d4c2}*SharedItemsImports = 13
@@ -72,6 +75,26 @@ Global
 		{BEF6AA55-6B5B-4C24-A176-17D147F5FDC3}.Release|x86.ActiveCfg = Release|x86
 		{BEF6AA55-6B5B-4C24-A176-17D147F5FDC3}.Release|x86.Build.0 = Release|x86
 		{BEF6AA55-6B5B-4C24-A176-17D147F5FDC3}.Release|x86.Deploy.0 = Release|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|ARM.ActiveCfg = Debug|ARM
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|ARM.Build.0 = Debug|ARM
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|ARM.Deploy.0 = Debug|ARM
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|x64.ActiveCfg = Debug|x64
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|x64.Build.0 = Debug|x64
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|x64.Deploy.0 = Debug|x64
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|x86.ActiveCfg = Debug|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|x86.Build.0 = Debug|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Debug|x86.Deploy.0 = Debug|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|Any CPU.ActiveCfg = Release|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|ARM.ActiveCfg = Release|ARM
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|ARM.Build.0 = Release|ARM
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|ARM.Deploy.0 = Release|ARM
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|x64.ActiveCfg = Release|x64
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|x64.Build.0 = Release|x64
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|x64.Deploy.0 = Release|x64
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|x86.ActiveCfg = Release|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|x86.Build.0 = Release|x86
+		{96B492A7-45F9-4714-A754-44D135FC8244}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,5 +103,6 @@ Global
 		{C09680EB-0351-42AA-A7F7-33569500D4C2} = {68AB91D3-E02C-4724-9351-134B2CBF3529}
 		{82617AD4-BF21-4606-B785-DAEEFFC3B22E} = {68AB91D3-E02C-4724-9351-134B2CBF3529}
 		{BEF6AA55-6B5B-4C24-A176-17D147F5FDC3} = {68AB91D3-E02C-4724-9351-134B2CBF3529}
+		{96B492A7-45F9-4714-A754-44D135FC8244} = {68AB91D3-E02C-4724-9351-134B2CBF3529}
 	EndGlobalSection
 EndGlobal
